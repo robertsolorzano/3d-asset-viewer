@@ -96,8 +96,8 @@ function loadModel(contents) {
             scene.remove(model);
         }
         model = gltf.scene;
-        model.position.y = document.getElementById('model-y-position').value; // Set initial Y position from slider
-        const scale = document.getElementById('model-scale').value; // Set initial scale from slider
+        model.position.y = document.getElementById('model-y-position').value; 
+        const scale = document.getElementById('model-scale').value;
         model.scale.set(scale, scale, scale);
         scene.add(model);
     }, (error) => {
