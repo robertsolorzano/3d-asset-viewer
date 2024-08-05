@@ -16,6 +16,24 @@ body {
     background: rgba(255, 255, 255, 0.8);
     padding: 10px;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.control-button {
+    background: #fff;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 1.2em;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.control-button:hover {
+    background-color: #f0f0f0;
+    border-color: #bbb;
 }
 
 #placeholder {
@@ -30,11 +48,15 @@ body {
     font-size: 1.2em;
     color: #b4b4b4;
     margin: 0;
-    padding: 10px;
+    padding: 10px 20px;
     border: 2px solid #b4b4b4;
     border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
 }
 
-.placeholder-icon {
-    margin-top: 10px;
+#placeholder p:hover {
+    background-color: #f0f0f0;
+    border-color: #ffd900;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
